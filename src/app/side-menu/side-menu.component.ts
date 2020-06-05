@@ -12,8 +12,6 @@ export class SideMenuComponent implements OnInit {
   @Input('parent') parentMenu : menu; //Referencia al menú padre. Esto para poder hacer links con Bootstsrap y menús colapsables
   @Input() box_name : string; //Nombre que llevará la caja para los menús colapsables
 
-  @ViewChild('flipIcon', {static: false}) icon : ElementRef<HTMLElement>;;
-
   constructor() {}
 
   ngOnInit(): void {
