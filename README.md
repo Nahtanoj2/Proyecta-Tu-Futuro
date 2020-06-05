@@ -5,8 +5,11 @@ Repositorio para Proyecta tu futuro
 # Paquetes usados
 
 Bootstrap 4
+
 Jquery 3
+
 popperjs
+
 FontAwesome 5
 
 
