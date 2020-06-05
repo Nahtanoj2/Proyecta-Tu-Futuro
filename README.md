@@ -1,6 +1,6 @@
 # Proyecta
 
-Repositorio para Proyecta tu futuro
+Repositorio para Proyecta tu futuro hehco en Angular 9
 
 # Paquetes usados
 
