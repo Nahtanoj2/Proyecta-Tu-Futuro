@@ -1,32 +1,13 @@
-<<<<<<< HEAD
 # Proyecta
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+Repositorio para Proyecta tu futuro
 
-## Development server
+# Paquetes usados
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Bootstrap 4
+Jquery 3
+popperjs
+FontAwesome 5
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
-# Proyecta-Tu-Futuro
-Reposotorio de la prueba de Proyecta para FullStack
->>>>>>> 544b4a1e56101d322ee850444a1b3b2c5da0fccb
+Se utilizó La plantilla SB Admin 2 Para darle un estilo de cajón
