@@ -1,0 +1,35 @@
+<div 
+class="rounded pr-2"
+[ngClass]="{'collapse trans-box mb-1' : parentMenu}"
+id="{{ box_name }}"
+[attr.aria-labelledby]="(parentMenu) ? (parentMenu.name + '_link') : ''"
+[attr.data-parent]="(parentMenu) ? ('#' + parentMenu.name + '_box') : ''"
+>
+    <div 
+        *ngFor="let subMenu of mainMenu.menu; let i = index;" 
+        class="pl-2 collapse-inner rounded"
+        >
+        <div class="py-2">
+            <a href="#" class="collapse-item text-decoration-none text-white"
+                [ngClass]="{'collapsed' : subMenu.menu}"
+                [attr.data-toggle]=" (subMenu.menu) ? 'collapse' : '' "
+                [attr.data-parent]=" (subMenu.menu) ? ('#'+box_name) : '' "
+                [attr.data-target]=" (subMenu.menu) ? ('#'+box_name + '_c-' + i) : '' "
+                (click)="flipIcon($event)"
+            >
+
+                <img *ngIf="subMenu.image" [src]="subMenu.image">
+                <i class="fas fa-angle-right text-white" *ngIf="!subMenu.image && subMenu.menu"></i>
+                {{ subMenu.name }}
+                <span *ngIf="subMenu.badge" class="badge badge-pill badge-danger float-right mt-1" #faIcon>{{ subMenu.badge }}</span>
+            </a>                             
+        </div>
+
+
+            <app-side-menu [menu]="subMenu" [box_name]="box_name + '_c-' + i" [parent]="mainMenu"></app-side-menu>
+
+    </div>
+
+</div>
+
+
